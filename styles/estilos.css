@@ -34,9 +34,9 @@ h1 {
       "imagenAbout textAbout textAbout"
       "icono1 icono2 icono3"
       "footer footer footer";
-  }
+}
 
-  .container1 {  display: grid;
+.container1 {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 300px 220px 150px;
     gap: 0px 0px;
@@ -44,8 +44,8 @@ h1 {
     grid-template-areas:
       "header header header"
       "quienesSomos quienesSomos quienesSomos"
-      "imagen1 imagen2 imagen3"
-      "footer footer footer";
+        "imagen1 imagen2 imagen3"
+        "footer footer footer";
   }
   .container2 { 
       display: grid;
@@ -83,145 +83,13 @@ h1 {
           "form1 form1 form1"
           "footer footer footer";
       }
-.donde {
-    grid-area: donde;
-    background-position: center;
-    align-items: center;
-    text-align: center;
-}
-.donde h2{
-    color: #D9534F;
-    padding-bottom: 1rem;
-}
-.form1 {
-    grid-area: form1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20% 10% 10%;
-}
-.quienesSomos { grid-area: quienesSomos; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.quienesSomos h1 {
-        padding: 0 15%;
-        text-align: center;
-    }
-.quienesSomos p {
-        padding: 0 15%;
-        justify-content: center;
-        text-align: center;
-    }
-.imagen1 { grid-area: imagen1;
-    background-image: url(../img/eric-widget.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    height: 200px;
-    width: 200px;
-}
-.imagen2 { grid-area: imagen2; 
-    background-image: url(../img/jason-response.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    height: 200px;
-    width: 200px;}
-.imagen3 { grid-area: imagen3;
-    background-image: url(../img/kundalini-yoga.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    width: 200px;   
-}
-.mainServ {  grid-area: mainServ; 
-    background-image: url(../img/advantages-of-yoga.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
-    color: #D9534F;
-}
-.mainServ p{
-    color: #D9534F;
-}
-.mainServ .text1 {
-    width: 40%;
-    padding: 5%;
-    color: #D9534F;
-}
-.mainServ .text2 {
-    width: 40%;
-    padding: 5%;
-    color: #D9534F;
-}
-.mainServ .text3 {
-    width: 40%;
-    padding: 5%;
-    color: #D9534F;
-}
-.mainServ .text4 {
-    width: 40%;
-    padding: 5%;
-    color: #D9534F;
-}
-.imgFotos img{
-    width: 250px;
-    height: 250px;
-}
-.imgFotos2 img{
-    width: 250px;
-    height: 250px;
-}
-.imgFotos3 img{
-    width: 250px;
-    height: 250px;
-}
-.imgFotos{
-    grid-area: imgFotos;
-    background-image: url(../img/eric-widget.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.imgFotos2{
-    grid-area: imgFotos2;
-    background-image: url(../img/jason-response.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.imgFotos3{
-    grid-area: imgFotos3;
-    background-image: url(../img/basic-yoga.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.imgVideo{
-    grid-area: imgVideo;
-}
 
-.footer { grid-area: footer; }
-  
-
-  /*-----seccioon header-----*/
+/*-----seccioon header-----*/
   
 .header { grid-area: header;
     background-color: white;
     width: 100%;
-
 }
-
 nav {
     display: flex;
     flex-direction: row;
@@ -435,8 +303,135 @@ display: flex;
 }
 
 /*-----Fin seccion Iconos-----*/
+.donde {
+    grid-area: donde;
+    background-position: center;
+    align-items: center;
+    text-align: center;
+}
+.donde h2{
+    color: #D9534F;
+    padding-bottom: 1rem;
+}
+.form1 {
+    grid-area: form1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20% 10% 10%;
+}
+.quienesSomos { grid-area: quienesSomos; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quienesSomos h1 {
+        padding: 0 15%;
+        text-align: center;
+    }
+.quienesSomos p {
+        padding: 0 15%;
+        justify-content: center;
+        text-align: center;
+    }
+.imagen1 { grid-area: imagen1;
+    background-image: url(../img/eric-widget.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+}
+.imagen2 { grid-area: imagen2; 
+    background-image: url(../img/jason-response.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 200px;
+    width: 200px;}
+.imagen3 { grid-area: imagen3;
+    background-image: url(../img/kundalini-yoga.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;   
+}
+.mainServ {  grid-area: mainServ; 
+    background-image: url(../img/advantages-of-yoga.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    color: #D9534F;
+}
+.mainServ p{
+    color: #D9534F;
+}
+.mainServ .text1 {
+    width: 40%;
+    padding: 5%;
+    color: #D9534F;
+}
+.mainServ .text2 {
+    width: 40%;
+    padding: 5%;
+    color: #D9534F;
+}
+.mainServ .text3 {
+    width: 40%;
+    padding: 5%;
+    color: #D9534F;
+}
+.mainServ .text4 {
+    width: 40%;
+    padding: 5%;
+    color: #D9534F;
+}
+.imgFotos img{
+    width: 250px;
+    height: 250px;
+}
+.imgFotos2 img{
+    width: 250px;
+    height: 250px;
+}
+.imgFotos3 img{
+    width: 250px;
+    height: 250px;
+}
+.imgFotos{
+    grid-area: imgFotos;
+    background-image: url(../img/eric-widget.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.imgFotos2{
+    grid-area: imgFotos2;
+    background-image: url(../img/jason-response.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.imgFotos3{
+    grid-area: imgFotos3;
+    background-image: url(../img/basic-yoga.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.imgVideo{
+    grid-area: imgVideo;
+}
 
-  .footer { grid-area: footer; 
+.footer { grid-area: footer; 
     width: 100%;
     background-color: #96CEB4;
     display: flex;
@@ -884,7 +879,7 @@ display: flex;
 
 
     /*+++++INICIO SERVICIOS+++++*/
-    
+
 
     /*+++++FIN SERVICIOS+++++*/
     
