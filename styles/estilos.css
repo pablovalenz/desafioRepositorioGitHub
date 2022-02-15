@@ -115,10 +115,12 @@ nav {
 .header a {
     font-size: 18px;
     color: #D9534F;
+    transition: 0.7s;
 }
 
 .header a:hover {
     color: #FFAD60; 
+    font-size: 20px;
 }
 
 /*----- Fin seccion header-----*/
