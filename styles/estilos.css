@@ -170,6 +170,7 @@ nav {
 
 .agende { grid-area: agende;
 background-color: #FFEEAD;
+background-image: linear-gradient(#FFEEAD, #f8c808);
 display: flex;
 }
 
