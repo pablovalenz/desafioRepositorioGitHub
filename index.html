@@ -7,27 +7,32 @@
     <title>PH Zen - Yoga y Pilates</title>
     <link rel="icon" href="img/Logo1.png" type="image/png"
     sizes="16x16">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
-<body class="container">
+<body class="container0">
         
     
         <header class="header">
-            <nav>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                
                 <img src="img/Logo1.png" alt="PH Zen">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="imagenes.html">Imagenes</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="nabvar-nav mr-auto mt-2 mt-lg-0 navbar-toggler-rigth collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="imagenes.html">Imagenes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
         
         
-        <section class="secHero">
+        <section class="secHero col-sm-12">
             <h1>Espacio de Bienestar Físico, Emocional y Mental</h1>
             <p>Clases de PILATES, YOGA y TERAPIAS ALTERNATIVAS ubicado en el barrio de Palermo</p>
             <button><a href="nosotros.html">Saber más</a></button>
@@ -45,24 +50,28 @@
         </section>
 
 
-        <section class="imagenAbout"></section>
-        <section class="textAbout">
-            <h2>“La buena condición física es el primer requisito para la felicidad”</h2>
-            <p>Sería un grave error pensar que sólo hacer ejercicio es suficiente para lograr el completo bienestar físico. La persona que cuide su alimentación y hábitos de sueño y que se ejercite correctamente estará tomando la mejor medicina preventiva</p>
-        </section>   
+        <section class="about row">
+            <section class="imagenAbout col-sm-12 col-md-6"></section>
+            <section class="textAbout col-sm-12 col-md-6">
+                <h2>“La buena condición física es el primer requisito para la felicidad”</h2>
+                <p>Sería un grave error pensar que sólo hacer ejercicio es suficiente para lograr el completo bienestar físico. La persona que cuide su alimentación y hábitos de sueño y que se ejercite correctamente estará tomando la mejor medicina preventiva</p>
+            </section>
+        </section>
 
 
-        <section class="icono1">
-            <h3>Yoga Básico</h3>
-            <img src="img/basic-yoga.jpg" alt="">
-        </section>
-        <section class="icono2">
-            <h3>Yoga kundalini</h3>
-            <img src="img/kundalini-yoga.jpg" alt="">
-        </section>
-        <section class="icono3">
-            <h3>Yoga Iyengar</h3>
-            <img src="img/iyengar-yoga.jpg" alt="">
+        <section class="iconos row">
+            <div class="icono1 col-sm-12 col-md-4">
+                <h3>Yoga Básico</h3>
+                <img src="img/basic-yoga.jpg" alt="">
+            </div>
+            <div class="icono2 col-sm-12 col-md-4">
+                <h3>Yoga kundalini</h3>
+                <img src="img/kundalini-yoga.jpg" alt="">
+            </div>
+            <div class="icono3 col-sm-12 col-md-4">
+                <h3>Yoga Iyengar</h3>
+                <img src="img/iyengar-yoga.jpg" alt="">
+            </div>
         </section>
         
         
@@ -81,5 +90,9 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>
