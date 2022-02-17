@@ -38,37 +38,36 @@ h1 {
 
 .container1 {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 300px 220px 150px;
+    grid-template-rows: 100px 300px 400px 150px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       "header header header"
       "quienesSomos quienesSomos quienesSomos"
-        "imagen1 imagen2 imagen3"
-        "footer footer footer";
+      "imagen1 imagen2 imagen3"
+      "footer footer footer";
   }
   .container2 { 
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 100px 350px 350px 150px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100px 400px 150px;
       gap: 0px 0px;
       grid-auto-flow: row;    
       grid-template-areas: 
-      "header header header"
-      "mainServ mainServ mainServ"
-      "mainServ mainServ mainServ"
-      "footer footer footer";
+      "header header"
+      "mainServ mainServ"
+      "mainServ mainServ"
+      "footer footer";
     }
     .container3 { 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 100px 350px 350px 400px 150px;
+        grid-template-rows: 100px 400px 400px 150px;
         gap: 10px 10px;
         grid-auto-flow: row;    
         grid-template-areas: 
         "header header header"
-        "imgFotos2 imgFotos imgFotos"
-        "imgFotos2 imgFotos3 imgFotos3"
+        "imgFotos imgFotos2 imgFotos3"
         "imgVideo imgVideo imgVideo"
         "footer footer footer";
       }
@@ -349,29 +348,18 @@ display: flex;
         text-align: center;
     }
 .imagen1 { grid-area: imagen1;
-    background-image: url(../img/eric-widget.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     height: 200px;
     width: 200px;
 }
 .imagen2 { grid-area: imagen2; 
-    background-image: url(../img/jason-response.jpg);
-    background-position: center;
-    background-size: cover;
     display: flex;
     height: 200px;
     width: 200px;}
 .imagen3 { grid-area: imagen3;
-    background-image: url(../img/kundalini-yoga.jpg);
-    background-position: center;
-    background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 200px;
     width: 200px;   
 }
@@ -407,41 +395,39 @@ display: flex;
     padding: 5%;
     color: #D9534F;
 }
-.imgFotos img{
-    width: 250px;
-    height: 250px;
-}
-.imgFotos2 img{
-    width: 250px;
-    height: 250px;
-}
-.imgFotos3 img{
-    width: 250px;
-    height: 250px;
-}
+
+/*-----FIN SERVICIOS-----*/
 .imgFotos{
     grid-area: imgFotos;
-    background-image: url(../img/eric-widget.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
 }
 .imgFotos2{
     grid-area: imgFotos2;
-    background-image: url(../img/jason-response.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 .imgFotos3{
     grid-area: imgFotos3;
-    background-image: url(../img/basic-yoga.jpg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
+.imgFotos img{
+    width: 300px;
+    height: 300px;
+    justify-content: space-between;
+}
+.imgFotos2 img{
+    width: 300px;
+    height: 300px;
+}
+.imgFotos3 img{
+    width: 300px;
+    height: 300px;
+}
+
 .imgVideo{
     grid-area: imgVideo;
+}
+.imgVideo iframe{
+    width: 80%;
+    height: 80%;
 }
 
 .footer { grid-area: footer; 
@@ -603,7 +589,7 @@ display: flex;
               }
     .container1 {  display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 400px 300px 300px 300px 300px;
+        grid-template-rows: 100px 400px 400px 400px 400px 400px;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
@@ -617,7 +603,7 @@ display: flex;
         .container2 { 
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 100px 175px 175px 175px 175px 300px;
+            grid-template-rows: 100px 200px 200px 200px 200px 400px;
             gap: 0px 0px;
             grid-auto-flow: row;    
             grid-template-areas: 
@@ -631,21 +617,20 @@ display: flex;
           .container3 { 
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 100px 175px 175px 175px 175px 400px 300px;
+            grid-template-rows: 100px 400px 400px 400px 400px;
             gap: 0px 0px;
             grid-auto-flow: row;    
             grid-template-areas: 
             "header"
             "imgFotos"
-            "imgFotos"
             "imgFotos2"
-            "imgFotos3"
+            /*"imgfotos3"*/
             "imgVideo"
             "footer";
           }
           .container4 {  display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 100px 400px 300px 400px 300px;
+            grid-template-rows: 100px 400px 300px 400px 400px;
             gap: 0px 0px;
             grid-auto-flow: row;
             grid-template-areas:
@@ -662,19 +647,13 @@ display: flex;
           }
     .imgFotos{
         grid-area: imgFotos;
-        width: 70%;
-        height: 175px;
     }
     
     .imgFotos2{
         grid-area: imgFotos2;
-        width: 70%;
-        height: 175px;
     }
     .imgFotos3{
         grid-area: imgFotos3;
-        width: 70%;
-        height: 175px;
     }
     .imgVideo{
         width: 70%;
@@ -699,15 +678,6 @@ display: flex;
     }
     .header a {
         font-size: 10px;
-    }
-    .imagen1{
-        padding-left: 10%;
-    }
-    .imagen2{
-        padding-left: 10%;
-    }
-    .imagen3{
-        padding-left: 10%;
     }
     .mainServ {
         grid-area: mainServ;
